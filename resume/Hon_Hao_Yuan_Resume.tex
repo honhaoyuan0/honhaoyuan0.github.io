@@ -1,0 +1,132 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Essential packages for formatting
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{1.5ex}{1.5ex}
+
+% Keep links print-friendly while preserving clickable PDF annotations
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+}
+
+\begin{document}
+
+% -----------------------------------------------------------
+% HEADER
+% -----------------------------------------------------------
+\begin{center}
+    {\Huge \textbf{Hon Hao Yuan (Brandon)}} \\ \vspace{6pt}
+    \href{mailto:promc1314@gmail.com}{promc1314@gmail.com} $|$
+    \href{tel:+60188744857}{+60-18-8744857} $|$
+    \href{https://github.com/honhaoyuan0}{GitHub} $|$
+    \href{https://www.linkedin.com/in/hao-yuan-hon-699524242/}{LinkedIn} $|$
+    \href{https://honhaoyuan0.github.io}{Personal Website}
+\end{center}
+\vspace{2ex}
+
+% -----------------------------------------------------------
+% EDUCATION
+% -----------------------------------------------------------
+\section{Education}
+
+\textbf{National University of Singapore (NUS)} \hfill Aug 2025 -- May 2026 \\
+\href{https://www.comp.nus.edu.sg/~ngne/}{\textit{Non-Graduating Non-Exchange Programme (NGNE), School of Computing}}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Admitted into a highly selective immersion programme for international undergraduates.
+    \item Executed a faculty-supervised Final Year Project (FYP) focused on engineering a real-time observability architecture for Software-Defined Networks (SDNs).
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Beijing Institute of Technology (BIT)} \hfill Aug 2022 -- June 2026 \\
+\textit{Computer Science and Technology, School of Computing}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item \textbf{GPA:} 3.67 / 4.0 $|$ \textbf{Weighted Average Mark:} 89.05 / 100.00
+\end{itemize}
+
+% -----------------------------------------------------------
+% EXPERIENCE
+% -----------------------------------------------------------
+\section{Experience}
+
+\textbf{Part-Time Software Engineering Intern} $|$ \textit{NUS-NCS Joint Lab for Cyber Security} \hfill Sep 2025 -- Nov 2025
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Engineered a \textbf{secure} and \textbf{reliable} automated \textbf{Python}-based data ingestion pipeline, streamlining the extraction and mapping of data into a \textbf{Neo4j} graph database.
+    \item Analyzed system architecture to evaluate and resolve \textbf{performance bottlenecks}, improving overall data processing throughput and \textbf{infrastructure scalability}.
+    \item Facilitated daily communication and cross-team coordination with researchers to validate data models and \textbf{triage} potential integration issues.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Research Assistant} $|$ \textit{Beijing Institute of Technology} \hfill Nov 2023 -- May 2024
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Analyzed academic publication data using multithreaded \textbf{Python} scripts and managed \textbf{Elasticsearch} indices for data exploration.
+\end{itemize}
+
+% -----------------------------------------------------------
+% PROJECTS
+% -----------------------------------------------------------
+\section{Projects}
+
+\textbf{Observable Global Control Plane for SDNs (FYP)} $|$
+\href{https://github.com/chew01/ixp-gcp/tree/feat/observability}{\textit{GitHub}} \hfill Dec 2025 -- May 2026 \\
+\textit{Advised by Assoc. Prof. Ma Tianbai (Richard)} \\
+\textit{Go, Kubernetes, Docker, Kafka, OpenTelemetry, Grafana}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Co-architected a distributed Software-Defined Network (SDN) control plane, building the microservices using \textbf{Golang}, packaging into \textbf{Docker} containers under \textbf{Ubuntu Linux}, and managing \textbf{deployment} onto a local \textbf{Kubernetes (k8s)} cluster.
+    \item Spearheaded system \textbf{observability} by deeply integrating \textbf{OpenTelemetry}, ensuring the network architecture remains \textbf{reliable, scalable, and secure}.
+    \item Managed \textbf{infra} and provisioned scalable telemetry pipelines utilizing \textbf{Kafka}, creating comprehensive \textbf{monitoring and dashboarding} solutions via \textbf{Grafana} to visualize real-time network states.
+    \item Engineered automated \textbf{issue triage} mechanisms using \textbf{Alertmanager} and custom metrics to trigger real-time Telegram alerts, proactively analyzing and responding to potential risks like soft failures.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{AI-Driven Solana Market Scanner (Web3 Hackathon)} $|$
+\href{https://github.com/looikaizhi/meme-ai-agent}{\textit{GitHub}} \hfill June 2026 -- June 2026 \\
+\textit{AI Agentic Workflows, Model Context Protocol (MCP), LLM Reasoning Pipelines}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Architected an automated scanning tool via a no-code \textbf{AI agentic workflow}, utilizing AI as an engineering copilot to translate written plans into actionable implementation checkpoints.
+    \item Integrated \textbf{Bitget MCP tools} to provision a real-time data ingestion pipeline, actively \textbf{monitoring} live market telemetry, news feeds, and backtesting data for automated system analysis.
+    \item Designed an evidence-first ``bull, bear, and judge'' automated evaluation flow, structuring \textbf{reliable} LLM reasoning pipelines for objective data analysis and automated risk evaluation.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{ProgressArc} $|$
+\href{https://github.com/honhaoyuan0/ProgressArc}{\textit{GitHub}} \hfill Dec 2024 -- Feb 2025 \\
+\textit{Vue.js, Python, Flask, MongoDB, REST APIs}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Engineered a scalable \textbf{Python Flask} backend with robust \textbf{REST APIs} for secure \textbf{login services} and registration.
+    \item Designed a responsive \textbf{Vue.js} frontend and utilized \textbf{MongoDB} for data scalability, simplifying \textbf{infra management} and operations (\textbf{O\&M}).
+\end{itemize}
+\vspace{8pt}
+
+\textbf{FoodBridge} $|$
+\href{https://github.com/tanhaoen/FoodBridge}{\textit{GitHub}} \hfill Feb 2024 -- March 2024 \\
+\textit{React Native, Convex}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item Developed a cross-platform \textbf{React Native} mobile app and integrated \textbf{Convex} as a plugged-in backend to manage real-time data synchronization, ensuring a \textbf{reliable} and \textbf{scalable} cloud infrastructure.
+\end{itemize}
+
+% -----------------------------------------------------------
+% SKILLS
+% -----------------------------------------------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.2in, itemsep=4pt, parsep=2pt, topsep=4pt]
+    \item \textbf{Programming \& Scripting:} Python, Go, Bash, SQL, C++, C
+    \item \textbf{Cloud, DevOps \& O\&M:} AWS, Kubernetes, Docker, Helm, Kafka, Prometheus, Grafana, OpenTelemetry, Linux
+    \item \textbf{Backend, AI \& Architecture:} Microservices, Distributed Systems, REST APIs, Flask, AI Agents, MCP, Convex
+    \item \textbf{Databases:} Elasticsearch, MongoDB, MySQL, Neo4j
+    \item \textbf{Language Skills:} Bilingual proficiency in Chinese and English
+\end{itemize}
+
+\end{document}

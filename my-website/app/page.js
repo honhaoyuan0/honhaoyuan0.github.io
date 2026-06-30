@@ -128,12 +128,47 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
               Year 4 Computer Science Student and Volleyball Enthusiast 
             </h2>
+
+            <div className="mx-auto max-w-4xl rounded-2xl border border-blue-200/70 bg-white/80 p-5 text-left shadow-lg backdrop-blur dark:border-slate-700 dark:bg-slate-800/80">
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400">
+                    June 2026 · Web3 Hackathon
+                  </p>
+                  <h3 className="mt-2 text-xl font-bold text-gray-900 dark:text-white">
+                    Built MemeDog with an agentic AI workflow
+                  </h3>
+                  <p className="mt-2 text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Over one intense week, I built a Solana memecoin scanner with my senior while using AI as an engineering copilot—not just a code generator. Written plans became implementation checkpoints, Bitget MCP tools supplied live market, news, and backtesting data, and reusable domain skills helped shape an evidence-first bull, bear, and judge evaluation flow.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {[
+                      "Plan-driven delivery",
+                      "MCP-connected data",
+                      "Skills: news · technical · sentiment · market intel",
+                    ].map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-300"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
             
             {/* Action Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="/assets/Hon Hao Yuan's CV (Eng).pdf"
-                download="Hon_Hao_Yuan_CV.pdf"
+                href="/assets/Hon_Hao_Yuan_Resume.pdf"
+                download="Hon_Hao_Yuan_Resume.pdf"
                 className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 hover:from-blue-700 hover:to-purple-700"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -301,7 +336,7 @@ export default function Home() {
               
               {/* Education Items */}
               <div className="space-y-12">
-                {/* Future Education */}
+                {/* NUS Education */}
                 <div className="relative flex items-center">
                   <div className="flex-1 pr-8">
                     {/* Empty space for alternating layout */}
@@ -313,26 +348,26 @@ export default function Home() {
                   <div className="flex-1 pl-8">
                     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6">
                       <div className="flex items-center mb-2">
-                        <span className="text-sm text-purple-600 dark:text-purple-400 font-semibold">2025 - Present</span>
+                        <span className="text-sm text-purple-600 dark:text-purple-400 font-semibold">Aug 2025 - May 2026</span>
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">
                         National University of Singapore
                       </h3>
                       <a href="https://www.comp.nus.edu.sg/~ngne/" className="text-gray-600 dark:text-gray-300 mb-2">
-                        Non-Graduating Non-Exchange Programme (NGNE)
+                        Non-Graduating Non-Exchange Programme (NGNE), School of Computing
                       </a>
                       <p className="text-sm text-gray-500 dark:text-gray-400">
-                        A stepping stone towards a Master's degree at NUS, while experiencing a different learning culture from China
+                        Selected for an immersive international undergraduate programme and completed a faculty-supervised final-year project on real-time observability for Software-Defined Networks.
                       </p>
                     </div>
                   </div>
                 </div>
-                {/* On Going Education */}
+                {/* BIT Education */}
                 <div className="relative flex items-center">
                   <div className="flex-1 pr-8 text-right">
                     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6">
                       <div className="flex items-center justify-end mb-2">
-                        <span className="text-sm text-blue-600 dark:text-blue-400 font-semibold">2022 - 2026 (Expected)</span>
+                        <span className="text-sm text-blue-600 dark:text-blue-400 font-semibold">Aug 2022 - Jun 2026</span>
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">
                         Beijing Institute of Technology
@@ -342,7 +377,7 @@ export default function Home() {
                           Major in Computer Science and Technology
                         </p>
                         <p className="text-gray-600 dark:text-gray-300 mb-2">
-                          GPA: 3.67/4.0
+                          GPA: 3.67/4.0 · Weighted Average: 89.05/100
                         </p>
                       </div>
                       <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -408,6 +443,23 @@ export default function Home() {
           </div>
 
           <div className="max-w-4xl mx-auto">
+            <ExperienceCard
+              title="Part-Time Software Engineering Intern"
+              company="NUS-NCS Joint Lab for Cyber Security"
+              duration="Sep 2025 – Nov 2025"
+              description="Engineered a secure Python data-ingestion pipeline that mapped research data into Neo4j, while working with researchers to improve processing throughput, scalability, and integration reliability."
+              technologies={["Python", "Neo4j", "Data Pipelines", "System Architecture"]}
+              achievements={[
+                "Automated the extraction and mapping of research data into a Neo4j graph database",
+                "Analyzed architectural bottlenecks to improve data-processing throughput and infrastructure scalability",
+                "Coordinated with researchers to validate data models and triage integration issues"
+              ]}
+              gradientFrom="green-500"
+              gradientTo="teal-500"
+            />
+
+            <div className="h-8"></div>
+
             <ExperienceCard 
               title="Research Assistant"
               company="Beijing Institute of Technology"
@@ -440,6 +492,38 @@ export default function Home() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <ProjectCard
+              title="Observable Global Control Plane for SDNs (FYP)"
+              description="A distributed Software-Defined Network control plane designed with real-time observability, scalable telemetry, and automated issue triage as first-class system capabilities."
+              duration="Dec 2025 - May 2026"
+              technologies={["Go", "Kubernetes", "Docker", "Kafka", "OpenTelemetry", "Grafana"]}
+              features={[
+                "Co-architected Golang microservices and deployed them as Docker containers on a local Kubernetes cluster",
+                "Integrated OpenTelemetry and Kafka to build scalable, real-time telemetry pipelines",
+                "Created Grafana monitoring views for live network state and system health",
+                "Used Alertmanager and custom metrics to identify soft failures and send real-time Telegram alerts"
+              ]}
+              githubUrl="https://github.com/chew01/ixp-gcp/tree/feat/observability"
+              gradientFrom="indigo-500"
+              gradientTo="purple-500"
+            />
+
+            <ProjectCard
+              title="AI-Driven Solana Market Scanner"
+              description="A Web3 hackathon project that monitors newly created Solana memecoins and uses an agentic AI pipeline to turn live evidence into structured risk evaluations."
+              duration="Jun 2026"
+              technologies={["AI Agents", "MCP", "Bitget Agent Hub", "LLM Pipelines"]}
+              features={[
+                "Translated written plans into implementation checkpoints with AI-assisted delivery",
+                "Connected Bitget MCP tools for live market telemetry, news feeds, and backtesting data",
+                "Designed independent bull and bear analyses followed by an evidence-first judge",
+                "Used reusable news, technical, sentiment, and market-intelligence skills"
+              ]}
+              githubUrl="https://github.com/looikaizhi/meme-ai-agent"
+              gradientFrom="orange-500"
+              gradientTo="pink-500"
+            />
+
             <ProjectCard
               title="Personal Portfolio Website"
               description="A modern, responsive portfolio website built with Next.js and Tailwind CSS. Features dark mode, smooth scrolling navigation, and modular component architecture."
