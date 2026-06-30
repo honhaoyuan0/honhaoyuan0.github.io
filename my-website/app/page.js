@@ -129,41 +129,6 @@ export default function Home() {
               Year 4 Computer Science Student and Volleyball Enthusiast 
             </h2>
 
-            <div className="mx-auto max-w-4xl rounded-2xl border border-blue-200/70 bg-white/80 p-5 text-left shadow-lg backdrop-blur dark:border-slate-700 dark:bg-slate-800/80">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400">
-                    June 2026 · Web3 Hackathon
-                  </p>
-                  <h3 className="mt-2 text-xl font-bold text-gray-900 dark:text-white">
-                    Built MemeDog with an agentic AI workflow
-                  </h3>
-                  <p className="mt-2 text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Over one intense week, I built a Solana memecoin scanner with my senior while using AI as an engineering copilot—not just a code generator. Written plans became implementation checkpoints, Bitget MCP tools supplied live market, news, and backtesting data, and reusable domain skills helped shape an evidence-first bull, bear, and judge evaluation flow.
-                  </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "Plan-driven delivery",
-                      "MCP-connected data",
-                      "Skills: news · technical · sentiment · market intel",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-300"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-            
             {/* Action Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
@@ -640,7 +605,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript', 'Python', 'C++', 'C'].map((skill) => (
+                {['Python', 'Go', 'Bash', 'SQL', 'C++', 'C'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -648,7 +613,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Frameworks & Libraries */}
+            {/* Backend, AI & Architecture */}
             <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center mb-4">
                 <div className="p-3 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg">
@@ -657,11 +622,11 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 ml-3">
-                  Web & Backend Frameworks
+                  Backend, AI & Architecture
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['React Native', 'Vue3', 'Flask'].map((skill) => (
+                {['Microservices', 'Distributed Systems', 'REST APIs', 'Flask', 'AI Agents', 'MCP', 'Convex'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -682,7 +647,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['Kubernetes', 'Docker', 'Helm', 'Prometheus', 'Grafana'].map((skill) => (
+                {['AWS', 'Kubernetes', 'Docker', 'Helm', 'Kafka', 'Prometheus', 'Grafana', 'OpenTelemetry', 'Linux'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -705,7 +670,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['Elasticsearch', 'MongoDB', 'MySQL'].map((skill) => (
+                {['Elasticsearch', 'MongoDB', 'MySQL', 'Neo4j'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -728,48 +693,6 @@ export default function Home() {
               <div className="flex flex-wrap gap-2">
                 {['Windows', 'Ubuntu Linux (WSL)', 'macOS'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 rounded-full text-sm font-medium">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Developer Tools */}
-            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center mb-4">
-                <div className="p-3 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 ml-3">
-                  Developer Tools
-                </h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['VS Code', 'PyCharm', 'Jupyter Notebook'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm font-medium">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Other Technologies */}
-            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center mb-4">
-                <div className="p-3 bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 ml-3">
-                  Other Technologies
-                </h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['HTML', 'CSS/Bootstrap', 'Convex', 'Figma', 'Twilio'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
                 ))}
